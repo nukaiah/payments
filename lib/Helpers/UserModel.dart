@@ -1,0 +1,9 @@
+String? username;
+String? phone;
+String? date;
+String? time;
+String? acno;
+String? bankname;
+String? ifsccode;
+String? role;
+var cbal;
