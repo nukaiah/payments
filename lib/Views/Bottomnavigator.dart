@@ -55,16 +55,16 @@ class _BottomnavigatorScreenState extends State<BottomnavigatorScreen> {
         controller: _pageController,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: btnColor,
+        backgroundColor: bgClr,
         currentIndex:_currentIndex,
-        elevation: 0.0,
+        elevation: 10.0,
         type:BottomNavigationBarType.fixed,
-        selectedItemColor:Colors.green ,
+        selectedItemColor:txtClr ,
         items: [
           // ignore: deprecated_member_use
-          BottomNavigationBarItem(icon:  Icon(Icons.home_outlined,),title: Text("Home",style: TxtStls.txtStl2,)),
-          BottomNavigationBarItem(icon: Icon(Icons.list,),title: Text("Transactions",style: TxtStls.txtStl2,)),
-          BottomNavigationBarItem(icon: Icon(Icons.person,),title: Text("Profile",style: TxtStls.txtStl2,)),
+          BottomNavigationBarItem(icon:  Icon(Icons.home_outlined,),title: Text("Home",style: TxtStls.txtStl)),
+          BottomNavigationBarItem(icon: Icon(Icons.list,),title: Text("Transactions",style: TxtStls.txtStl)),
+          BottomNavigationBarItem(icon: Icon(Icons.person,),title: Text("Profile",style: TxtStls.txtStl)),
         ],
         onTap: onTabTapped
       ),

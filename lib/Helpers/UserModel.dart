@@ -6,4 +6,5 @@ String? acno;
 String? bankname;
 String? ifsccode;
 String? role;
+var pl;
 var cbal;

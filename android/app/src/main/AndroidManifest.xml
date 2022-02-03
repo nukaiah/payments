@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yalagalasrinivas.payments">
    <application
-        android:label="payments"
+        android:label="ANVS"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

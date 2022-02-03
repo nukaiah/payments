@@ -86,22 +86,22 @@ class _TransactionlistScreenState extends State<TransactionlistScreen> {
                                  child:ListTile(
                                    tileColor: bgClr,
                                    leading: Container(
-                                       width: size.width*0.15,
-                                       height: size.height*0.09,
+                                       width: size.width*0.1,
+                                       height: size.height*0.05,
                                        decoration: BoxDecoration(
                                          color:type=="Credit"?Colors.green:Colors.red,
                                          borderRadius: BorderRadius.all(Radius.circular(15)),
                                        ),
                                        child: Transform.rotate(
                                          angle: type=="Credit"?-90/4:112.5,
-                                         child: Icon(Icons.arrow_right_alt_rounded,color:bgClr,size: 40,),
+                                         child: Icon(Icons.arrow_right_alt_rounded,color:bgClr,size: 35,),
                                        )
                                      ),
 
                                    title: Text(type=="Credit"?"Deposit":"WithDrawl",style: TxtStls.titlestl),
                                    trailing: Wrap(
                                      children: [
-                                       Text(type=="Credit"?"+":"",style: TxtStls.txtStl),
+                                       Text(type=="Credit"?"Rs +":"Rs ",style: TxtStls.txtStl),
                                    Text("${snapshot.data[index]["trans"].toString()}",style: TxtStls.txtStl)
                                      ],
                                    ),
@@ -146,4 +146,5 @@ class _TransactionlistScreenState extends State<TransactionlistScreen> {
       },
     ),);
   }
+
 }

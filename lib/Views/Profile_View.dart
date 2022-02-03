@@ -208,7 +208,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.only(bottomRight: Radius.circular(60)),
               gradient: LinearGradient(
-                  colors: [Colors.indigo,Colors.black.withOpacity(0.9)]
+
+                  colors: [Colors.pinkAccent,Colors.purple.withOpacity(0.9)]
+
               )
 
           ),

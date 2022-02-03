@@ -228,6 +228,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           "ifsccode":ifsccode,
           "bankname":bankname,
           "role":"User",
+          "earnings":0,
         }).execute();
         if(response.error == null){
 
